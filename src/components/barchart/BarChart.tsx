@@ -3,8 +3,8 @@ import BChart from "../bchart/BChart";
 
 interface BarChartProps {
   chartData: number[];
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
   chartLabels?: string[];
   bgColor?: string;
   barColor?: string;
@@ -45,8 +45,8 @@ class BarChart extends React.Component<BarChartProps> {
       <BChart
         chartData={chartData}
         chartLabels={chartLabels}
-        width={width}
-        height={height}
+        width={width ? width : 400}
+        height={height ? height : 300}
         bgColor={bgColor}
         barColor={barColor}
         highlightColor={highlightColor}
