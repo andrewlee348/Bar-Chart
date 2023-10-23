@@ -18,5 +18,5 @@ Lower bound of height:
 Without labels: 25  
 With labels: 50
 
-With heights below or at the lower bounds, the bars disappear and text starts to get cut off.
+With heights below or at the lower bounds, the bars disappear and text starts to get cut off.  
 With heights above the lower bounds, all functionality is normal.
