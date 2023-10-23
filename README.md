@@ -14,8 +14,8 @@ The default values are stored within the BarChart and other components and not t
 
 I tried to make the chart component as scalable as possible and I think I have achieved something very close. The bars and bar widths scale perfectly to almost any height and width. However, if the height is set low enough, the bars disappear. This is because I had to give allocate some top and bottom component space for the hover value tooltip as well as the data labels.
 
-Lower bound of height:
-Without labels: 25
+Lower bound of height:  
+Without labels: 25  
 With labels: 50
 
 With heights below or at the lower bounds, the bars disappear and text starts to get cut off.
