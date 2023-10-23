@@ -24,9 +24,11 @@ const Bar: React.FC<BarProps> = ({
   highlightColor,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const subHeight = label ? 50 : 25;
+  const barHeight = (value / maxValue) * (height - subHeight);
 
-  const fullHeight = (value / maxValue) * height;
-  const barHeight = label ? fullHeight - 50 : fullHeight - 25;
+  // const fullHeight = (value / maxValue) * height;
+  // const barHeight = label ? fullHeight : fullHeight;
   const yOffset = label ? 25 : 0;
   const labelOffset = label ? 30 : 5;
 
